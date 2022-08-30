@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform Aesop's Fables</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Transform Aesop's Fables</h1>
+    <form>
+      <label
+        for="Aesop's Fables
+        "
+        >Aesop's Fables</label
+      >
+      <input
+        type="text"
+        list="Fableslist"
+        name="list"
+        placeholder="select story"
+        autocomplete="off"
+      />
+    </form>
+    <datalist id="Fableslist">
+      <optgroup label="5 years and older recommended" value="option">
+        <option
+          label="권장 도서"
+          value="fox and grapes"
+          id='options'
+              "
+        ></option>
+      </optgroup>
+      <optgroup label="18 years and older recommended">
+        <option
+          label="accessControl"
+          value="Fairy Tale of Cruelty - Snow White"
+          id="options"
+          class="notRecommended"
+          aria-disabled="true"
+        ></option>
+      </optgroup>
+    </datalist>
+
+    <div class="radio">
+      <label for="ko">KO</label>
+      <input id="ko" type="radio" name="kous" value="ko" checked />
+      <label for="us">US</label>
+      <input id="us" type="radio" name="kous" value="us" />
+    </div>
+    <div>
+      <button type="button" class="generate">GenerateStory</button>
+    </div>
+
+    <p class="story"></p>
+    <script src="./main.js"></script>
+  </body>
+</html>
